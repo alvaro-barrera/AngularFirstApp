@@ -1,11 +1,14 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "app-persons",
-  templateUrl: "./persons.component.html",
-  styleUrls: ["./persons.component.css"]
+  selector: 'app-persons',
+  templateUrl: './persons.component.html',
+  styleUrls: ['./persons.component.css'],
 })
-
-export class PersonsComponent{
-  isDisabled = true
+export class PersonsComponent {
+  isDisabled = false;
+  message = 'Ninguna persona agregada';
+  storePerson() {
+    this.message = 'Persona agregada';
+  }
 }
