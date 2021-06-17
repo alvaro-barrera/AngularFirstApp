@@ -1,5 +1,7 @@
-<p>
-  Nombre: {{name}}
-  Apellido: {{lastname}}
-  Edad: {{year}}
-</p>
+<p>Nombre: {{ name }} Apellido: {{ lastname }} Edad: {{ year }}</p>
+
+<div (keyup)="(0)">
+  <label>Repetidor:</label>
+  <input #inputPerson />
+  {{ inputPerson.value }}
+</div>
