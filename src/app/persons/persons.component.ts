@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class PersonsComponent {
   isDisabled = false;
   showMessage=false;
-  message = 'Ninguna persona agregada';
+  message = '';
   title = '';
 
   storePerson() {
